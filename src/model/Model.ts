@@ -15,9 +15,11 @@ const listSchema = new mongoose.Schema({
         required: true
     },
     completed:{
-        type: Boolean,
-        default: false
+        type: Number,
+        default: 0
     }
 })
 
 export const List = mongoose.model('List', listSchema)
+
+//completed ? 0 - novo / 1 - fazendo / 2 - concluido
