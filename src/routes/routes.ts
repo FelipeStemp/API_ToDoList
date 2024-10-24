@@ -8,7 +8,7 @@ routes.post('/createItem', createItem_)
 routes.get('/', getAllItens)
 routes.get('/name/:name', getItemByIdOrName)
 routes.get('/id/:id', getItemByIdOrName)
-routes.get('/userItens', getItemByIdUser)
+routes.get('/userItens/:id', getItemByIdUser)
 
 routes.put('/updateByID/:id', updateItemByIdOrName)
 routes.put('/updateByName/:name', updateItemByIdOrName)

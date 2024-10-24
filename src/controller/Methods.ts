@@ -33,7 +33,7 @@ export const createItem_ = async (Request: express.Request , Response: express.R
 
 export const getItemByIdUser = async (Request: express.Request , Response: express.Response) => {
     try{
-        const {userId} = Request.body;
+        const userId = Request.params.id;
         const itens = await getItemByUserId(userId)
 
         return Response.status(200).json(itens)
