@@ -13,9 +13,9 @@ const app = express();
 
 // Configurando o CORS
 app.use(cors({
-    origin: '*', // Permite requisições apenas do seu frontend
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
-    allowedHeaders: ['Content-Type'], // Cabeçalhos permitidos
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    allowedHeaders: ['Content-Type'],
 }));
 
 app.use(express.json());
